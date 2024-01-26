@@ -6,14 +6,32 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 13:06:46 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/01/23 16:11:42 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/01/25 00:14:44 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putnbr(long nbr)
-{	
+int	ft_intlen(int nbr)
+{
+	int	i;
+
+	i = 0;
+
+	if (nbr < 0)
+		i = 1;
+	while (nbr)
+	{
+		i++;
+		nbr = nbr / 10;
+	}
+	return (i);
+}
+int	ft_putnbr(long nbr)
+{
+	int	res;
+
+	res = ft_intlen(nbr);
 	if (nbr < 0)
 	{
 		ft_putchar('-');
@@ -26,9 +44,10 @@ void	ft_putnbr(long nbr)
 	}
 	else
 		ft_putchar(nbr + 48);
+	return (res);
 }
 // int main()
 // {
-// 	printf("helo\n");
-// 	ft_putnbr(LONG_MIN);
+// 	printf("%d",ft_intlen(-123));
+// 	//ft_putnbr(LONG_MIN);
 // }

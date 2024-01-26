@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 12:45:27 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/01/23 17:47:33 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/01/25 19:58:10 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@
 #include <stdio.h>
 #include <limits.h>
 #include <stdarg.h>
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-void	ft_putnbr(long nbr);
-void	ft_putnbr_u(unsigned long nbr);
+
+int	ft_putchar(char c);
+int	ft_putstr(char *str);
+int	ft_putnbr(long nbr);
+int	ft_putnbr_u(unsigned long nbr);
+int ft_printf(const char *format, ...);
 
 #endif
