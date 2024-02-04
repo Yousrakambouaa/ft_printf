@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 12:45:27 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/01/25 19:58:10 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/04 18:37:01 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ int	ft_putchar(char c);
 int	ft_putstr(char *str);
 int	ft_putnbr(long nbr);
 int	ft_putnbr_u(unsigned long nbr);
+int	ft_puthexa(unsigned int nbr, char c);
 int ft_printf(const char *format, ...);
-
 #endif

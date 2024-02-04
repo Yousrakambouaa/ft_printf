@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 17:23:24 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/01/25 20:18:07 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/04 21:06:58 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "ft_printf.h"
 
 
-int	ft_intlen(unsigned long nbr)
+static int	ft_intlen(unsigned long nbr)
 {
 	int	i;
 

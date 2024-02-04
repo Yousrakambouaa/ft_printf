@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 13:34:58 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/01/26 18:30:58 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/04 21:21:24 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,18 +35,10 @@ int	ft_printf(const char *format, ...)
 				count += ft_putstr(va_arg(args, char *));
 			if (format[i] == 'u')
 				count += ft_putnbr_u(va_arg(args, unsigned long));
-			// if (fornat [i] == 'p')
-			// 	count += ft_putptr(va_arg(args, void *));
-			if (format[i] == 'x')
-			{
-				/* code */
-			}
-			
+			if (format[i] == 'x' || format[i] == 'X')
+				count += ft_puthexa(va_arg(args, unsigned int), format[i]);
 			if (format[i] == '%')
-			{
-				ft_putchar('%');
-				count++;
-			}
+				count += ft_putchar('%');
 		}
 		else
 		{
@@ -60,11 +52,5 @@ int	ft_printf(const char *format, ...)
 
 int main()
 {
-	// char str[10] ="hhhh";
-	// int a = -96;
-	// printf("%d\n",ft_printf("hello%u %s \n",a ,str));
-	// printf("\n");
-	// printf("%d\n",printf("hello%u %s \n",a ,str));
-	int *p;
-	printf("%p",p);
+	printf("%p","heelooo");
 }

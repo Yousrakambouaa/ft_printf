@@ -6,13 +6,13 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 13:06:46 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/01/25 00:14:44 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/04 21:06:46 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_intlen(int nbr)
+static int	ft_intlen(int nbr)
 {
 	int	i;
 

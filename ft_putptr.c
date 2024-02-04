@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/26 16:05:12 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/01/26 16:05:42 by ykamboua         ###   ########.fr       */
+/*   Created: 2024/02/04 21:28:46 by ykamboua          #+#    #+#             */
+/*   Updated: 2024/02/04 21:30:10 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "ft_printf.h"
 
-int ft_putptr()
+int	ft_putptr()
