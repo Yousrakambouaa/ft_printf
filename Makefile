@@ -6,7 +6,7 @@
 #    By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/23 13:44:21 by ykamboua          #+#    #+#              #
-#    Updated: 2024/02/04 20:46:57 by ykamboua         ###   ########.fr        #
+#    Updated: 2024/02/05 17:24:56 by ykamboua         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libftprintf.a
 CC = cc
 FLAGS = -Wall -Wextra -Werror
 
-SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c  ft_putnbr_u.c ft_puthexa.c
+SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c  ft_putnbr_u.c ft_puthexa.c ft_putptr.c
 
 OBJ = ${SRC:.c=.o}
 

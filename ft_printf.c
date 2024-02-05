@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 13:34:58 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/02/04 21:21:24 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/05 18:17:49 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,9 @@ int	ft_printf(const char *format, ...)
 				count += ft_putnbr_u(va_arg(args, unsigned long));
 			if (format[i] == 'x' || format[i] == 'X')
 				count += ft_puthexa(va_arg(args, unsigned int), format[i]);
+			if (format[i] == 'p')
+				count += ft_putptr(va_arg(args, void*));
+			
 			if (format[i] == '%')
 				count += ft_putchar('%');
 		}
@@ -52,5 +55,8 @@ int	ft_printf(const char *format, ...)
 
 int main()
 {
-	printf("%p","heelooo");
+	char *s="hello";
+	
+	printf("%p\n",s);
+	ft_printf("%p",s);
 }

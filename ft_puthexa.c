@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 15:34:11 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/02/04 21:04:43 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/05 18:23:04 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,36 +20,33 @@ int	ft_puthexa(unsigned int nbr, char c)
 	count = 0;
 	if (c == 'X')
 		buff = "0123456789ABCDEF";
-	else if (c == 'x')
+	else
 		buff = "0123456789abcdef";
-	else 
-		return -1;
-
-	if (nbr == 0)
+	
+	if (nbr < 0)
 	{
 		ft_putchar('0');
+		count++;
 	}
 	if (nbr >= 16)
 	{
 		count += ft_puthexa(nbr / 16, c);
-		
-		// ft_puthexa(nbr % 16, c);
 	}
 	ft_putchar(buff[nbr % 16]);
 	count++;
 	return count;
 }
 
-// int main()
-// {
-// 	int a;
-// 	int b;
-// 	a = printf("%X\n",'a');
-// 	b = ft_puthexa('a', 'X');
+int main()
+{
+	int a;
+	int b;
+	a = printf("%X\n",120);
+	b = ft_puthexa(120, 'X');
 	
-// 	printf("%%%\n");
-// 	printf("standard: %d\n",a);
+	printf("\n");
+	printf("standard: %d\n",a);
 	
-// 	printf("mine: %d\n",b);
+	printf("mine: %d\n",b);
 	
-// }
+}
