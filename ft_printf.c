@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 13:34:58 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/02/05 18:17:49 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/05 21:04:58 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ int	ft_printf(const char *format, ...)
 	return (va_end(args), count);
 }
 
-int main()
-{
-	char *s="hello";
+// int main()
+// {
+// 	char *s="hello";
 	
-	printf("%p\n",s);
-	ft_printf("%p",s);
-}
+// 	printf("%p\n",s);
+// 	ft_printf("%p",s);
+// }

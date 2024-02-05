@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 12:21:04 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/02/04 20:48:45 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/05 21:35:51 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,12 @@ int	ft_putstr(char *str)
 
 	i = 0;
 	// res = ft_strlen(str);
+	if (str == NULL)
+	{
+		ft_putstr("(null)");
+		return (6);
+	}
+	
 	while (str[i])
 	{
 		ft_putchar(str[i]);
@@ -37,5 +43,6 @@ int	ft_putstr(char *str)
 }
 // int main()
 // {
-// 	printf("%d",ft_putstr("hello\n"));
+// 	// printf("%d",ft_putstr("hello\n"));
+// 	printf("%d\n",ft_printf("%s\n",NULL));
 // }

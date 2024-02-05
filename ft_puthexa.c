@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 15:34:11 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/02/05 18:23:04 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/05 21:04:43 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,16 @@ int	ft_puthexa(unsigned int nbr, char c)
 	return count;
 }
 
-int main()
-{
-	int a;
-	int b;
-	a = printf("%X\n",120);
-	b = ft_puthexa(120, 'X');
+// int main()
+// {
+// 	int a;
+// 	int b;
+// 	a = printf("%X\n",120);
+// 	b = ft_puthexa(120, 'X');
 	
-	printf("\n");
-	printf("standard: %d\n",a);
+// 	printf("\n");
+// 	printf("standard: %d\n",a);
 	
-	printf("mine: %d\n",b);
+// 	printf("mine: %d\n",b);
 	
-}
+// }
