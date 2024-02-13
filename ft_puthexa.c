@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 15:34:11 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/02/05 21:04:43 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/08 17:47:30 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ int	ft_puthexa(unsigned int nbr, char c)
 	else
 		buff = "0123456789abcdef";
 	
-	if (nbr < 0)
+	if (nbr == 0)
 	{
 		ft_putchar('0');
-		count++;
+		return (1);
 	}
 	if (nbr >= 16)
 	{

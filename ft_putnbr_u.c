@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 17:23:24 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/02/04 21:06:58 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/08 17:01:07 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	ft_intlen(unsigned long nbr)
 	int	i;
 
 	i = 0;
-
+	
 	while (nbr)
 	{
 		i++;
@@ -28,11 +28,17 @@ static int	ft_intlen(unsigned long nbr)
 	return (i);
 }
 
-int	ft_putnbr_u(unsigned long nbr)
+int	ft_putnbr_u(unsigned int nbr)
 {
 	int	len;
 
 	len = ft_intlen(nbr);
+	if (nbr == 0)
+	{
+		ft_putchar('0');
+		return (1);
+	}
+
 	if (nbr > 9)
 	{
 		ft_putnbr_u(nbr / 10);
@@ -42,3 +48,4 @@ int	ft_putnbr_u(unsigned long nbr)
 		ft_putchar(nbr + 48);
 	return (len);
 }
+
