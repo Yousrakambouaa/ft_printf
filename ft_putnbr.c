@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 13:06:46 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/02/08 17:00:03 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/17 13:50:07 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ static int	ft_intlen(long nbr)
 	int	i;
 
 	i = 0;
-
 	if (nbr < 0)
 		i = 1;
 	while (nbr)
@@ -27,17 +26,14 @@ static int	ft_intlen(long nbr)
 	}
 	return (i);
 }
+
 int	ft_putnbr(long nbr)
 {
 	int	res;
 
 	res = ft_intlen(nbr);
 	if (nbr == 0)
-	{
-		ft_putchar('0');
-		return (1);
-	}
-	
+		return (ft_putchar('0'));
 	if (nbr < 0)
 	{
 		ft_putchar('-');
@@ -52,11 +48,3 @@ int	ft_putnbr(long nbr)
 		ft_putchar(nbr + 48);
 	return (res);
 }
-// int main()
-// {
-// 	// printf("%d",ft_intlen(-123));
-// 	// int a = ft_putnbr(0);
-// 	// ft_putnbr(0);
-// 	printf("\n%d\n",ft_putnbr(INT_MIN));
-// 	printf("%d",INT_MIN);
-// }

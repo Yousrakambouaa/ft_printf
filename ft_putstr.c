@@ -6,33 +6,19 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 12:21:04 by ykamboua          #+#    #+#             */
-/*   Updated: 2024/02/12 13:52:13 by ykamboua         ###   ########.fr       */
+/*   Updated: 2024/02/14 20:58:37 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// int	ft_strlen(char *str)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (str[i])
-// 		i++;
-// 	return(i);
-// }
 int	ft_putstr(char *str)
 {
 	int	i;
-	// int	res;
 
 	i = 0;
-	// res = ft_strlen(str);
 	if (str == NULL)
-	{
-		ft_putstr("(null)");
-		return (6);
-	}
+		return (ft_putstr("(null)"));
 	while (str[i])
 	{
 		ft_putchar(str[i]);
@@ -40,8 +26,3 @@ int	ft_putstr(char *str)
 	}
 	return (i);
 }
-// int main()
-// {
-// 	// printf("%d",ft_putstr("hello\n"));
-// 	printf("%d\n",ft_printf("%s\n",NULL));
-// }
